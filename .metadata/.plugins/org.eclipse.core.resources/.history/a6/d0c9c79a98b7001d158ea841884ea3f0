@@ -1,0 +1,23 @@
+package org.simplilearn.lockers;
+import java.util.Scanner;
+
+public class LockedMe
+{
+
+	public static void main(String[] args) 
+	{
+		int ch;
+	    Scanner sc =new Scanner(System.in);
+		//DO-WHILE LOOP
+		do 
+		{
+           //DISPLAY MENU_BAR 
+			 FileServices.displayMenu();
+			 System.out.println("Enter The Choice: ");
+			 ch=sc.nextInt();
+			
+	    }while(ch<=5);
+	   	
+	}    	
+
+}

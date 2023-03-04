@@ -1,0 +1,25 @@
+package org.simplilearn.lockers;
+
+public class FileServices 
+{
+   
+    //DISPLAY ALL MENU_BAR METHOD
+    public static void displayMenu()
+    {
+		System.out.println("******************************************************************************");
+		System.out.println("\t\tWELCOME TO LOCKED-ME.COM SECURED APP");
+		System.out.println("\t\tDeveloper Name: Tejaswini Arun Mahore");
+		System.out.println("\t\tGmail Account: tejaswinimahore@gmail.com");
+		System.out.println("*******************************************************************************");
+		System.out.println("   1. Display All The File Name");
+		System.out.println("   2. Add a File To Existing Directory ");
+		System.out.println("   3. Delete a File ");
+		System.out.println("   4. Search a File ");
+		System.out.println("   5. Sorting File In Ascending Order");
+		System.out.println("   6. Exit");
+		System.out.println("*******************************************************************************8");
+	}
+	
+
+	
+}

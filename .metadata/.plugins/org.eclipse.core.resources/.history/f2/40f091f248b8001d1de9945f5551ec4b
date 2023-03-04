@@ -1,0 +1,37 @@
+package org.simplilearn.lockers;
+import java.util.Scanner;
+
+public class LockedMe
+{
+
+	public static void main(String[] args) 
+	{
+	    final String Project_Path = "c:\\Java Project\\LockedMe App All Files";
+		int ch;
+		 FileServices fs =new  FileServices();
+	    Scanner sc =new Scanner(System.in);
+		//DO-WHILE LOOP
+		do 
+		{
+           //DISPLAY MENU_BAR 
+			 FileServices.displayMenu();
+			 System.out.println("   Enter The Choice: ");
+			 ch=sc.nextInt();
+			 
+			 //SWITCH CASE FOR CHOICES
+			 switch(ch)
+			 {
+			    case 1:
+			    	String[] fileNames=fs.getFiles( Project_Path);
+			    	System.out.println("List Of All Files Are:");
+			    	for(String name:fileNames)
+			    		System.out.println("*"+name);
+			    	break;
+			    	
+			 }
+			
+	    }while(ch<=5);
+	   	
+	}    	
+
+}
